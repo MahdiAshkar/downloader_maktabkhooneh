@@ -5,7 +5,7 @@ download videos of **site: [maktabkhooneh.org](https://maktabkhooneh.org/)**
 
 We can easily download a free or paid course at once
 
-![maktabkhooneh](https://raw.githubusercontent.com/MahdiAshkar/downloader/master/maktabkhooneh.png)
+![maktabkhooneh](https://raw.githubusercontent.com/MahdiAshkar/downloader_maktabkhooneh/master/maktabkhooneh.png)
 ## requirements
 ***
 To run the program, just install the under libraries
