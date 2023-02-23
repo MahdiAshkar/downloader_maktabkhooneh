@@ -46,15 +46,20 @@ else:
 video_path = input('Please Enter path Videos?')
 main_url =input('Please Enter Url of your course?')
 while True:
-    is_all_video = input('Do you want to download all videos?(y/n)')
-    if is_all_video == 'y' or is_all_video =='n':
+    is_download = input('are you want download video?(y/n)')
+    if is_download == 'y' or is_download == 'n':
         break
-if is_all_video == 'n':
-    start_video = int(input('Please Enter number Start video?'))
-    end_video =  int(input('Please Enter number End video?'))
-else:
-    start_video = 1
-    end_video = 0
+if is_download == 'y':
+    while True:
+        is_all_video = input('Do you want to download all videos?(y/n)')
+        if is_all_video == 'y' or is_all_video == 'n':
+            break
+    if is_all_video == 'n':
+        start_video = int(input('Please Enter number Start video?'))
+        end_video = int(input('Please Enter number End video?'))
+    else:
+        start_video = 1
+        end_video = 0
 ## ----------------------------
 ## Default program
 exist_link_videos_course = path.exists(video_path+'/link_vedios_course.txt')
