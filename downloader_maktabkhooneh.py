@@ -139,4 +139,5 @@ if __name__ == '__main__':
             authentication()
             extract_link_video()
             driver.quit()
-    download_video()
+    if is_download == 'y':
+        download_video()
