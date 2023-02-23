@@ -67,9 +67,9 @@ def extract_link_video():
     for page in link_page_video:
         system('cls')
         driver.get(page)
-        elem_link_video = driver.find_element(
-            by=By.CSS_SELECTOR, value='.js-copy-Popup+ .unit-content--download .button--round')
-        link_videos.append(elem_link_video.get_attribute('href'))
+        elem_link_video = driver.find_elements(
+            by=By.CSS_SELECTOR, value='.button--round')
+        link_videos.append(elem_link_video[0].get_attribute('href'))
     with open(video_path+'/link_vedios_course.txt', 'w') as file:
         for link in link_videos:
             file.write(link+'\n')
