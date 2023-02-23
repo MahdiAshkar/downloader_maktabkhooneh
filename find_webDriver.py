@@ -77,9 +77,8 @@ def find_webDriver_edge():
     div_stabel_driver = soup.find('div',{'class':'bare driver-downloads'})
     a_tags = div_stabel_driver.find_all('a')
     href_list = []
-    for a in a_tags[:2]:
-        href_link = a['href']
-        href_list.append(href_link)
+    link_win64 = a_tags[3]['href']
+    link_win32 = a_tags[4]['href']
     while True:
         windows = input('choose Win32 or Win64 ?')
         if windows == 'win32':
