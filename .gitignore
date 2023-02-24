@@ -6,7 +6,7 @@ __pycache__/
 webDriver/*.exe
 .venv
 info.txt
-# once_run.txt
+once_run.txt
 # requirements.txt
 # README.md
 
