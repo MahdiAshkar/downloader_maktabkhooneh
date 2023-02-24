@@ -83,14 +83,14 @@ def find_webDriver_edge():
         windows = input('choose Win32 or Win64 ?')
         if windows == 'win32':
             start =time()
-            download_zip(href_list[0])
+            download_zip(link_win32)
             end = time()
             print('\ntime download =>',(end-start)/60)
             extract_delete_zip()
             break
         elif windows == 'win64':
             start =time()
-            download_zip(href_list[1])
+            download_zip(link_win64)
             end = time()
             print('time download =>',(end-start)/60)
             extract_delete_zip()
